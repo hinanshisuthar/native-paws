@@ -1,0 +1,61 @@
+.signup-con {
+    background-color: #ffebce;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+    width: 24rem;
+    height: 100vh;
+}
+
+.signup-con,
+.bottom {
+    gap: 8px;
+}
+
+.top {
+    background-color: var(--accent-color);
+    width: max-content;
+    border-radius: 5% 5% 45% 45%;
+    padding: 1.2rem 4rem 0 4rem;
+}
+
+.select-form {
+    width: 70%;
+}
+
+.select-form button,
+.sign-up-form button {
+    padding: 5px 5px;
+
+}
+
+.doodle {
+    width: 80%;
+}
+
+form,
+form input {
+    border: transparent;
+}
+
+.login-btn {
+    background-color: var(--light-grey);
+}
+
+.sign-up-form>* {
+    padding: var(--size-5) var(--size-10);
+    margin: var(--size-3) 0;
+}
+
+.sign-up-form input {
+    border: 1px solid #808080;
+    border-radius: 8px 8px;
+}
+
+.sign-up-form button {
+    width: 100%;
+}
+
+.tnc {
+    place-items: center;
+    padding: 0;
+}
+
