@@ -59,3 +59,18 @@ form input {
     padding: 0;
 }
 
+/* log in */
+
+.li .bottom {
+    flex-grow: 1;
+}
+
+/* log-out */
+
+.lo .bottom {
+    flex-grow: 1;
+}
+
+.lo .bottom {
+    justify-content: center;
+}
