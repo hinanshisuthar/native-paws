@@ -12,3 +12,8 @@
     gap: 2rem;
 }
 
+.grid-75-25 {
+    grid-template-columns: 60% 1fr;
+    place-content: center;
+}
+
