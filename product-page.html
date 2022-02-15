@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8fb4d48a29.js" crossorigin="anonymous"></script>
+
+    <!-- Component Library Stylesheet -->
+    <link rel="stylesheet" href="https://native-ui.netlify.app/native-ui.css">
+
+    <!-- Native Paws Stylesheet -->
+    <link rel="stylesheet" href="/css/product-page.css">
+
+    <title>Shop All Products</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-content flex-row-sb p-1">
+            <a href="/index.html" class="logo">
+                <img src="/assets/logo.webp" alt="logo" class="img-responsive">
+            </a>
+            <div class="flex-row-sb right-nav px-sm">
+                <div class="search-con flex-row-sb">
+                    <div class="search">
+                        <form action="#" class="flex-row-sb">
+                            <input type="text" class="text-rg px-1" id="search-field"
+                                placeholder="Search the entire store...">
+                            <button type="submit" class="btn-icon px-sm"><i
+                                    class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="shop-con flex-row-sb">
+                    <a class="link" href="#">
+                        <h5>Shop</h5>
+                    </a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="experience-con flex-row-sb">
+                    <a class="link" href="#">
+                        <h5>experience</h5>
+                    </a>
+                </div>
+                <div class="location-con">
+                    <div class="location flex-row-sb">
+                        <a class="link" href="#">
+                            <h5>location</h5>
+                        </a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="account-con">
+                    <div class="user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+                <div class="cart-con">
+                    <i class="fa-solid fa-cart-shopping thin"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="grid grid-25-75 main">
+        <aside class="filters-sec p-2">
+            <div class="filter-con flex-row-sb my-sm">
+                <h3>FILTERS</h3>
+
+                <a class="link" href="#">
+                    <h5><button class="clear-all-btn">clear all</button></h5>
+                </a>
+            </div>
+            <hr>
+            <div class="sort-con my-sm">
+                <h5>SORT BY</h5>
+                <form action="#" class="m-0 py-1">
+                    <div class="grid grid-20-80">
+                        <input type="radio" name="sort" id="sort-asc" />
+                        <label for="sort-asc">price low to high</label>
+                    </div>
+
+                    <div class="grid grid-20-80">
+                        <input type="radio" name="sort" id="sort-des" />
+                        <label for="sort-des">price low to high</label>
+                    </div>
+
+                    <div class="grid grid-20-80">
+                        <input type="radio" name="sort" id="best-seller" />
+                        <label for="best-seller">best seller</label>
+                    </div>
+
+                    <div class="grid grid-20-80">
+                        <input type="radio" name="sort" id="new-arrivals" />
+                        
+                        <label for="new-arrivals">new arrivals</label>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="price-range my-md">
+                <h5>RATINGS</h5>
+                <form name="price-field" oninput="range1value.value = range1.valueAsNumber" class="price-field">
+                    <input name="range1" type="range" step="1" min="1" max="5" value="1">
+                    <div><output name="range1value" for="range1">1</output><span>⭐ and above</span></div>
+                </form>
+            </div>
+
+            <div class="sort-con">
+                <h5 class="py-sm">CATEGORIES</h5>
+                <form name="categories" class="categories">
+                    <h6 class="center">Products</h6>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="toys" id="toys">
+                        <label for="small">Toys</label>
+                    </div>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="food" id="food">
+                        <label for="small">Food</label>
+                    </div>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="leash" id="leash">
+                        <label for="small">Leash</label>
+                    </div>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="cloth" id="cloth">
+                        <label for="small">Cloths</label>
+                    </div>
+                </form>
+
+                <form name="categories" class="categories">
+                    <h6>Breed Size</h6>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="small" id="small">
+                        <label for="small">Small</label>
+                    </div>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="medium" id="medium">
+                        <label for="small">Medium</label>
+                    </div>
+                    <div class="grid grid-20-80">
+                        <input type="checkbox" name="large" id="large">
+                        <label for="small">Large</label>
+                    </div>
+                </form>
+            </div>
+
+        </aside>
+        <div class="all-prods pl-2">
+            <h1 class="mb-2">All products</h1>
+            <div class="products grid grid-3-col pt-2">
+                <a href="#" id="card-links" class="card-badge">
+                <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0531/2475/9744/products/Untitleddesign_56fc4021-7db6-487a-a232-6832417cd109_360x.jpg?v=1628853381"
+                                alt="product">
+                            <span class="btn-badge blue">NEW</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Dear pet Blooming Yellow Dog Harness</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 299</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="/assets/saverpack.jpg" alt="product">
+                            <span class="btn-badge green">BEST SELLER</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Dear Pet Super Saver Multi-Variety Dog Treat Pack (Pack of 4)</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 399</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/3/2/32020.jpg"
+                                alt="product">
+                            <span class="btn-badge purple">NATIVE'S CHOICE</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Treat Dispenser Toy for dogs and cats.</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 99</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+
+                <a href="#" id="card-links" class="card-badge">
+                <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://rukminim1.flixcart.com/image/612/612/kwfaj680/pet-toy/s/p/i/3-combo-of-3-durable-pet-teeth-cleaning-chewing-biting-knotted-original-imag93t9yyxvrygu.jpeg?q=70"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Chew Toys for dogs and cats - Pack of 3</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 299</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+
+                <a href="#" id="card-links" class="card-badge">
+                <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0531/2475/9744/products/1604737208kongsportsballjpg.jpg?v=1612535266"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Kong Sports Ball - Dog Toy</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 99</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://native-ui.netlify.app/assets/cards.png" alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>RAW dog treats - Chiken Jerky Flavour</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 199</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0531/2475/9744/products/2_2170515b-aeae-426e-91cc-7fac9dc78ba9.jpg?v=1638513393"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Chicken Jerky - Pack Of 2</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 399</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/Zig0A64-1.jpg"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Immunity drops for dogs and cats.</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 349</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+
+                <a href="#" id="card-links" class="card-badge">
+                <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/Zig0A1579-1.jpg"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Strawberry Flavour Creamy Dog Treats</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 159</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+</a>
+
+
+<a href="#" id="card-links" class="card-badge">
+    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/Zig0A1724.jpg"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Digest Bone for dogs and cats.</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 49</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/1/_/1_19.jpg"
+                                alt="product">
+                            <span class="btn-badge blue">NEW</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Whiskas - Tasty Mix for cats</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 249</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/8906001951667_1.jpg"
+                                alt="product">
+                            <span class="btn-badge blue">NEW</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>KENNEL - kitten chicken in jelly for cats.</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 299</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/i/m/img_4671.jpg"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Red Printed Sweatshirt</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 199</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/i/m/img_4568.jpg"
+                                alt="product">
+                            <span class="btn-badge blue">NEW</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Beboji Argyle Read Sweater For Dogs</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 199</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/i/m/img_4680.jpg"
+                                alt="product">
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Navy Sweatshirt with hoodie</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 199</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://native-ui.netlify.app/assets/cards1.png" alt="product">
+                            <span class="btn-badge blue">NEW</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Dear pet Blooming Yellow Dog Harness</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 299</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="card-links" class="card-badge">
+                    <div>
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://cdn.shopify.com/s/files/1/0531/2475/9744/products/floral-combo.jpg?v=1617789601"
+                                alt="product">
+                            <span class="btn-badge blue">NEW</span>
+                        </div>
+
+                        <div class="prod-content">
+                            <h5>Dear pet Blooming Yellow Dog Leash</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 199</span>
+                                <span class="ratings-con">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </span>
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod-links">
+                        <div class="prod-btn">
+                            <button class="btn btn-primary">Add to Bag</button>
+                            <button class="prod-like"><i class="fa fa-heart-o"></i></button>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
