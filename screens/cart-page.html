@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8fb4d48a29.js" crossorigin="anonymous"></script>
+
+    <!-- Component Library Stylesheet -->
+    <link rel="stylesheet" href="https://native-ui.netlify.app/native-ui.css">
+
+    <!-- Native Paws Stylesheet -->
+    <link rel="stylesheet" href="/css/cart-page.css">
+    <title>My Shopping Cart</title>
+</head>
+
+<body>
+    <div class="cart-wrapper mt-2">
+        <h1 class="center m-md p-md">My Shopping Cart</h1>
+        <div class="cart-grid grid grid-75-25">
+            <div class="cart-cards flex-col-sb p-1">
+                <div class="card-horizontal">
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="/assets/saverpack.jpg" alt="product" class="hori-img">
+                        </div>
+                    </div>
+                    <div class="prod-links p-1">
+                        <div class="prod-content p-0">
+                            <h5>Dear pet Blooming Yellow Dog Harness</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 299</span>
+
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                        <div class="prod-quantity flex-row-sb pl-sm">
+                            <button class="btn btn-float p-sm">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <span class="p-sm">1</span>
+                            <button class="btn btn-float">
+                                <i class="fas fa-minus p-sm"></i>
+                            </button>
+                        </div>
+                        <div class="prod-btn flex-row-sb pl-0">
+                            <a class="link p-sm" href="#">
+                                <h5>Add to Wishlist</h5>
+                            </a>
+                            <h5><button class="">
+                                    <i class="fas fa-trash-alt" id="delete-btn"></i>
+                                </button></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://native-ui.netlify.app/assets/cards.png" alt="product" class="hori-img">
+                        </div>
+                    </div>
+                    <div class="prod-links p-1">
+                        <div class="prod-content p-0">
+                            <h5>RAW - dog treats chicken jerry Flavour</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 199</span>
+
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                        <div class="prod-quantity flex-row-sb pl-sm">
+                            <button class="btn btn-float">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <span>1</span>
+                            <button class="btn btn-float">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <div class="prod-btn flex-row-sb pl-0">
+                            <a class="link p-sm" href="#">
+                                <h5>Add to Wishlist</h5>
+                            </a>
+                            <h5><button class="">
+                                    <i class="fas fa-trash-alt" id="delete-btn"></i>
+                                </button></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="product">
+                        <div class="prod-container">
+                            <img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/8906001951667_1.jpg"
+                                alt="product" class="hori-img">
+                        </div>
+                    </div>
+                    <div class="prod-links p-1">
+                        <div class="prod-content p-0">
+                            <h5>KENNEl - kitten chicken in jelly for cats</h5>
+                            <div class="prod-info">
+                                <span class="prod-price">Rs 299</span>
+
+                            </div>
+                            <div class="size-options">
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                            </div>
+                        </div>
+                        <div class="prod-quantity flex-row-sb pl-sm">
+                            <button class="btn btn-float">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <span>1</span>
+                            <button class="btn btn-float">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <div class="prod-btn flex-row-sb pl-0">
+                            <a class="link p-sm" href="#">
+                                <h5>Add to Wishlist</h5>
+                            </a>
+                            <h5><button class="">
+                                    <i class="fas fa-trash-alt" id="delete-btn"></i>
+                                </button></h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cart-details p-1">
+                <div class="prod-btn flex-row-sb p-1">
+                    <a class="link p-sm" href="#">
+                        <h5><i class="fa-solid fa-tag"></i>Apply a coupon</h5>
+                    </a>
+                </div>
+                <div class="price-con p-1 flex-col-sb">
+                    <h5 class="p-sm">PRICE DETAILS (<span>1</span> items)</h5>
+                    <hr>
+                    <div class="flex-row-sb p-sm">
+                        Net Price(in Rs)
+                        <span>797</span>
+                    </div>
+                    <div class="flex-row-sb p-sm">
+                        Coupon Discount(in Rs)
+                        <span>500</span>
+                    </div>
+                    <div class="flex-row-sb p-sm">
+                        Delivery Charges(in Rs)
+                        <div class="free">
+                            <strike> 99 </strike>
+                            <span>FREE</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex-row-sb p-sm text-bold">
+                        Payable Amount(in Rs)
+                        <span>297</span>
+                    </div>
+                </div>
+                <form action="#" class="flex-row-sb p-md" id="gift-form">
+                    <input type="checkbox" name="gift" id="gift-select">
+                    <label for="gift-select" class="text-left">This order contains a gift</label>
+                </form>
+                <button class="btn btn-primary place-order"><i class="fa-solid fa-truck-fast"></i>Place Order</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
