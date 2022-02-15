@@ -124,6 +124,19 @@ header {
     width: 80%;
 }
 
-#card-links:hover {
-    box-shadow: var(--box-shadow-2);
+.prod-img:hover {
+    transform: scale(1.1);
 }
+
+/* aside */
+
+aside {
+    position: sticky;
+    top: 6rem;
+    left: 0;
+    bottom: 0;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
