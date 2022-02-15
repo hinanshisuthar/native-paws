@@ -1,0 +1,142 @@
+@import url(/css/helper.css);
+
+body {
+    color: var(--bg-color-2);
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo {
+    flex-basis: 15%;
+    margin-right: 8rem;
+}
+
+.thin {
+    -webkit-text-stroke: 1px var(--background-color);
+}
+
+.user i {
+    -webkit-text-stroke: 0.5px var(--font-color-dark);
+}
+
+i {
+    cursor: pointer;
+}
+
+.right-nav {
+    flex-grow: 1;
+}
+
+form {
+    border: 2px solid var(--color-dark-blue);
+    border-radius: var(--size-12);
+    box-shadow: var(--box-shadow-2);
+}
+
+.search input {
+    border: transparent;
+    outline: transparent;
+}
+
+.text-rg {
+    margin: 0;
+}
+
+.search-icon {
+    color: var(--accent-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    z-index: var(--z-1);
+}
+
+.green {
+    background-color: #1b9b1b;
+}
+
+.purple {
+    background-color: #632A50;
+}
+
+.prod-links .prod-btn .btn-primary {
+    padding: 5px 2rem;
+}
+
+.prod-links .prod-btn .btn-primary:hover {
+    background-color: var(--hover-color-btn-prim);
+    color: var(--background-color);
+}
+
+.card-badge .prod-links .prod-btn .prod-like i {
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px var(--background-color);
+}
+
+
+.card-badge {
+    width: 17rem;
+    height: max-content;
+}
+
+.main {
+    grid-template-columns: 25% 1fr;
+    gap: 2em 0;
+}
+
+.all-prods {
+    margin-top: 3rem;
+}
+
+.products {
+    height: 100%;
+    gap: 1rem;
+}
+
+/* filter section */
+
+.sort-con form {
+    width: 100%;
+    border: transparent;
+    box-shadow: none;
+}
+
+.sort-con form div {
+    place-items: center;
+    place-content: start;
+}
+
+.price-field {
+    border: transparent;
+    box-shadow: none;
+}
+
+.price-field input {
+    width: 80%;
+}
+
+.prod-img:hover {
+    transform: scale(1.1);
+}
+
+/* aside */
+
+aside {
+    position: sticky;
+    top: 6rem;
+    left: 0;
+    bottom: 0;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
