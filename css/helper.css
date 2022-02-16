@@ -4,11 +4,17 @@
     --sand-bg: #ffebce;
     --bg-color-2: rgb(5, 15, 58);
     --box-shadow-2: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+    --hover-color-dark: #f13737;
 }
 
 .grid-6-col-auto {
     display: grid;
     grid-template-columns:  repeat(6, 1fr);
     gap: 2rem;
+}
+
+.grid-60-40 {
+    grid-template-columns: 60% 1fr;
+    place-content: center;
 }
 
