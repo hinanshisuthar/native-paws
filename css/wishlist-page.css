@@ -1,0 +1,32 @@
+@import url(/css/helper.css);
+
+.card-badge {
+    width: 15rem;
+}
+
+.wish-prods {
+    margin: 0 13rem 0 17rem;
+    gap: 2rem 0;
+}
+
+.btn-badge-dismiss i {
+    color: var(--font-color-dark);
+    background-color: var(--bg-grey);
+    cursor: pointer;
+}
+
+.ratings-con i {
+    font-size: 1rem;
+}
+
+.prod-btn .btn {
+    padding: 5px;
+    text-transform: capitalize;
+    width: 90%;
+    border: 1px solid var(--cta-color);
+}
+
+.prod-btn .btn:hover {
+    background-color: var(--bg-grey);
+}
+
