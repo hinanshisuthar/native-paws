@@ -94,3 +94,8 @@ form input {
     flex-basis: 50%;
 }
 
+#su-submit {
+    padding: 0;
+}
+
+
