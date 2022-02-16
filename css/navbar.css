@@ -1,0 +1,50 @@
+.logo {
+    flex-basis: 15%;
+    margin-right: 8rem;
+}
+
+.thin{
+    -webkit-text-stroke: 1px var(--background-color);
+}
+
+.user i{
+    -webkit-text-stroke: 0.5px var(--font-color-dark);
+}
+
+i{
+    cursor: pointer;
+}
+
+.right-nav {
+    flex-grow: 1;
+}
+
+.form-search {
+    border: 2px solid var(--color-dark-blue);
+    border-radius: var(--size-12);
+    box-shadow: var(--box-shadow-2);
+}
+
+.search input {
+    border: transparent;
+    outline: transparent;
+}
+
+.text-rg {
+    margin: 0;
+}
+
+.search-icon {
+    color: var(--accent-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    z-index: var(--z-1);
+}
+

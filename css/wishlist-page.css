@@ -1,4 +1,5 @@
 @import url(/css/helper.css);
+@import url(/css/navbar.css);
 
 .card-badge {
     width: 15rem;
@@ -28,5 +29,11 @@
 
 .prod-btn .btn:hover {
     background-color: var(--bg-grey);
+}
+
+hr {
+    width: 60%;
+    margin: auto;
+    border: 1px solid var(--bg-grey);
 }
 

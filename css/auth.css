@@ -1,8 +1,10 @@
+@import url(/css/helper.css);
+@import url(/css/navbar.css);
+
 .signup-con {
     background-color: #ffebce;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
     width: 24rem;
-    height: 100vh;
 }
 
 .signup-con,
@@ -28,7 +30,7 @@
 }
 
 .doodle {
-    width: 80%;
+    width: 50%;
 }
 
 form,
@@ -63,6 +65,7 @@ form input {
 
 .li .bottom {
     flex-grow: 1;
+    justify-content: flex-start;
 }
 
 /* log-out */
@@ -74,3 +77,20 @@ form input {
 .lo .bottom {
     justify-content: center;
 }
+
+.sign-up-btn:hover {
+    background-color: var(--hover-color-dark);
+    border: 2px solid transparent;
+    color: var(--background-color);
+}
+
+.forgot-pass-form div input {
+    flex-basis: 30%;
+}
+
+.forgot-pass-form div {
+    flex-grow: 0;
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
