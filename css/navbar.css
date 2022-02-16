@@ -17,6 +17,7 @@ i{
 
 .right-nav {
     flex-grow: 1;
+    align-items: center;
 }
 
 .form-search {
