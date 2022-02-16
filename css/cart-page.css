@@ -81,7 +81,7 @@ form input {
 }
 
 .place-order:hover {
-    background-color: #f13737;
+    background-color: var(--hover-color-dark);
     color: var(--background-color);
 }
 
@@ -97,3 +97,4 @@ form input {
 .free span {
     color: var(--cta-color);
 }
+
