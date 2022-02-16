@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="shop-con flex-row-sb">
-                    <a class="link" href="#">
+                    <a class="link" href="/screens/product-page.html">
                         <h5>Shop</h5>
                     </a>
                     <i class="fa-solid fa-angle-down"></i>
@@ -57,11 +57,22 @@
                 </div>
                 <div class="account-con">
                     <div class="user">
-                        <i class="fa-regular fa-user"></i>
+                        <a href="/screens/log-in.html"><i class="fa-regular fa-user"></i></a>
                     </div>
                 </div>
+                <div class="account-con">
+                    <a href="/screens/wishlist-page.html">
+                        <span class="badge-icon badge-container"><i class="fas fa-heart badge-icon-base"></i>
+                            <span class="count-badge heart-badge-number">4</span>
+                        </span>
+                    </a>
+                </div>
                 <div class="cart-con">
-                    <i class="fa-solid fa-cart-shopping thin"></i>
+                    <a href="/screens/cart-page.html">
+                        <span class="badge-icon badge-container"><i class="fa-solid fa-cart-shopping thin"></i>
+                            <span class="count-badge cart-badge-number">3</span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -74,12 +85,14 @@
                 <div class="doodle"><img src="/assets/auth-doodle.svg" alt="dog-doodle" class="img-responsive"></div>
             </div>
             <div class="bottom flex-col-sb">
-                <form action="#" class="grid grid-50-50" id="select-form">
-                    <button type="submit" class="log-in-btn btn">sign up</button>
-                    <button type="submit" class="sign-up-btn btn btn-primary">
-                        log in
-                    </button>
-                </form>
+                <div action="#" class="flex-row-se" id="select-form">
+                    <a href="/screens/sign-up.html" class="mr-sm">
+                        <button type="submit" class="log-in-btn btn">sign up</button>
+                    </a>
+                    <a href="/screens/log-in.html">
+                        <button type="submit" class="sign-up-btn btn btn-primary">log in</button>
+                    </a>
+                </div>
                 <div class="flex-row-sb">
                     <h4 class="mr-sm">Continue with </h4>
                     <div class="size-options m-0">
@@ -100,7 +113,7 @@
                         <h6 class="text-capitalize text-center">Forgot Password?</h6>
                     </a>
                 </form>
-                <button class="sign-up-btn btn btn-primary">log in</button>
+                <a href="/screens/log-in.html"><button class="sign-up-btn btn btn-primary">log in</button></a>
             </div>
         </div>
     </div>
