@@ -98,4 +98,20 @@ form input {
     padding: 0;
 }
 
+label {
+    display: inline-block;
+}
+
+form {
+    width: 90%;
+}
+
+@media screen and (max-width: 425px) {
+    .wrapper-auth {
+        width: 20rem;
+    }
+    form {
+        width: 90%;
+    }
+}
 
