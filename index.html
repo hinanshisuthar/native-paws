@@ -20,22 +20,20 @@
 
 <body>
     <div class="page-wrapper">
-        <header class="page-header">
+        <header class="page-header flex-col-sb">
             <div class="header-content flex-row-sb p-1">
                 <a href="/index.html" class="logo">
                     <img src="/assets/logo.webp" alt="logo" class="min-img img-responsive">
                 </a>
+                <div class="search-con flex-row-sb img-responsive">
+                    <form action="#" class="form-search flex-row-sb">
+                        <input type="text" class="text-rg pl-1" id="search-field"
+                            placeholder="search the entire store...">
+                        <button type="submit" class="btn-icon pr-sm"><i
+                                class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                    </form>
+                </div>
                 <div class="flex-row-sb right-nav px-sm">
-                    <div class="search-con flex-row-sb">
-                        <div class="search">
-                            <form action="#" class="form-search flex-row-sb">
-                                <input type="text" class="text-rg px-1" id="search-field"
-                                    placeholder="search the entire store...">
-                                <button type="submit" class="btn-icon px-sm"><i
-                                        class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
-                            </form>
-                        </div>
-                    </div>
                     <div class="shop-con flex-row-sb">
                         <a class="link" href="/screens/product-page.html">
                             <h5>Shop</h5>
@@ -62,7 +60,8 @@
                     </div>
                     <div class="wish-con">
                         <a href="/screens/wishlist-page.html">
-                            <span class="badge-icon badge-container"><i class="fas fa-heart badge-icon-base text-md"></i>
+                            <span class="badge-icon badge-container"><i
+                                    class="fas fa-heart badge-icon-base text-md"></i>
                                 <span class="count-badge heart-badge-number">4</span>
                             </span>
                         </a>
@@ -81,13 +80,21 @@
                     </div>
                 </div>
             </div>
+            <div class="search-btm p-1">
+                <form action="#" class="form-search flex-row-sb">
+                    <input type="text" class="text-rg pl-1" id="search-field" placeholder="search the entire store...">
+                    <button type="submit" class="btn-icon pr-sm"><i
+                            class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                </form>
+            </div>
         </header>
 
         <main>
             <div class="grid-6-col-auto pet-cards py-1 px-2 hori-scroll">
                 <div class="p-card center">
                     <a href="#" class="p-img center">
-                        <img src="https://www.zigly.com/media/wysiwyg/for_dogs.png" alt="" class="min-img-small img-responsive">
+                        <img src="https://www.zigly.com/media/wysiwyg/for_dogs.png" alt=""
+                            class="min-img-small img-responsive">
                     </a>
                     <a href="#" class="p-sm text-uppercase">
                         <h6>shop for dogs</h6>
@@ -95,7 +102,8 @@
                 </div>
                 <div class="p-card center">
                     <a href="#" class="p-img center">
-                        <img src="https://www.zigly.com/media/wysiwyg/for_cats.png" alt="" class="min-img-small img-responsive">
+                        <img src="https://www.zigly.com/media/wysiwyg/for_cats.png" alt=""
+                            class="min-img-small img-responsive">
                     </a>
                     <a href="#" class="p-sm text-uppercase">
                         <h6>shop for cats</h6>
@@ -103,7 +111,8 @@
                 </div>
                 <div class="p-card center">
                     <a href="#" class="p-img center">
-                        <img src="https://www.zigly.com/media/wysiwyg/puppy-store.png" class="min-img-small img-responsive">
+                        <img src="https://www.zigly.com/media/wysiwyg/puppy-store.png"
+                            class="min-img-small img-responsive">
                     </a>
                     <a href="#" class="p-sm text-uppercase">
                         <h6>explore puppy store</h6>
@@ -111,7 +120,8 @@
                 </div>
                 <div class="p-card center">
                     <a href="#" class="p-img center">
-                        <img src="https://www.zigly.com/media/wysiwyg/vet-consulting.png" alt="" class="min-img-small img-responsive">
+                        <img src="https://www.zigly.com/media/wysiwyg/vet-consulting.png" alt=""
+                            class="min-img-small img-responsive">
                     </a>
                     <a href="#" class="p-sm text-uppercase">
                         <h6>consult a vet</h6>
@@ -119,7 +129,8 @@
                 </div>
                 <div class="p-card center">
                     <a href="#" class="p-img center">
-                        <img src="https://www.zigly.com/media/wysiwyg/pet-grooming.png" alt="" class="min-img-small img-responsive">
+                        <img src="https://www.zigly.com/media/wysiwyg/pet-grooming.png" alt=""
+                            class="min-img-small img-responsive">
                     </a>
                     <a href="#" class="p-sm text-uppercase">
                         <h6>grooming</h6>
@@ -127,7 +138,8 @@
                 </div>
                 <div class="p-card center">
                     <a href="#" class="p-img center">
-                        <img src="https://www.zigly.com/media/wysiwyg/exp-center.png" alt="" class="min-img-small img-responsive">
+                        <img src="https://www.zigly.com/media/wysiwyg/exp-center.png" alt=""
+                            class="min-img-small img-responsive">
                     </a>
                     <a href="#" class="p-sm text-uppercase">
                         <h6>experience center</h6>
@@ -137,19 +149,6 @@
 
             <div class="banner-con flex-col-sb my-1">
                 <img src="/assets/banner.jpg" alt="banner" class="img-responsive">
-                <div class="banner-nav flex-row-sb">
-                    <div class="go-left">
-                        <button class="btn img-responsive">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </button>
-                    </div>
-                    <div class="go-right">
-                        <button class="btn">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </button>
-                    </div>
-                </div>
-                
             </div>
 
             <section class="categories flex-col-sb p-1 my-2">
@@ -158,20 +157,24 @@
                 </div>
                 <div class="cat-cards grid grid-4-col my-1 mx-2 hori-scroll p-1">
                     <div class="cat center">
-                        <img src="/assets/food-cat.svg" alt="food-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/food-cat.svg" alt="food-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Toys</h4>
                     </div>
 
                     <div class="cat center">
-                        <img src="/assets/toys-cat.svg" alt="toys-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/toys-cat.svg" alt="toys-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Food</h4>
                     </div>
                     <div class="cat center">
-                        <img src="/assets/leash.svg" alt="leash-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/leash.svg" alt="leash-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Leash</h4>
                     </div>
                     <div class="cat center">
-                        <img src="/assets/cloth.svg" alt="cloth-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/cloth.svg" alt="cloth-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Clothing</h4>
                     </div>
                 </div>
@@ -183,16 +186,19 @@
                 </div>
                 <div class="cat-cards grid grid-3-col my-1 mx-2 hori-scroll p-1">
                     <div class="cat center">
-                        <img src="/assets/jerry.png" alt="food-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/jerry.png" alt="food-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Small</h4>
                     </div>
 
                     <div class="cat center">
-                        <img src="/assets/jhonu.svg" alt="toys-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/jhonu.svg" alt="toys-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Medium</h4>
                     </div>
                     <div class="cat center">
-                        <img src="/assets/leash.svg" alt="leash-category" class="img-responsiveness img-circular min-img" />
+                        <img src="/assets/leash.svg" alt="leash-category"
+                            class="img-responsiveness img-circular min-img" />
                         <h4 class="overlay-text">Large</h4>
                     </div>
                 </div>
@@ -227,13 +233,16 @@
         </main>
 
         <footer class="footer py-2 mt-2">
-                <h5>Made with <i class="fa fa-heart"></i> by Hinanshi Suthar</h5>
-                <h5>Connect with me.</h5>
+            <h5>Made with <i class="fa fa-heart"></i> by Hinanshi Suthar</h5>
+            <h5>Connect with me.</h5>
 
             <div class="social-links">
-                <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
-                <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter pointer-cursor"></i></a>
-                <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
+                <a href="https://github.com/hinanshisuthar/native-ui-library" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-github pointer-cursor"></i></a>
+                <a href="https://twitter.com/hinanshi04" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-twitter pointer-cursor"></i></a>
+                <a href="https://www.linkedin.com/in/hinanshi-suthar-7128201b0/" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin pointer-cursor"></i></a>
             </div>
             <small>© Native UI. 2020</small>
         </footer>
@@ -241,4 +250,3 @@
 </body>
 
 </html>
-
