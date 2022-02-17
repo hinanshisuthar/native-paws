@@ -49,3 +49,30 @@ header {
     z-index: var(--z-1);
 }
 
+.min-img {
+    min-width: 10rem;
+}
+
+.min-img-small {
+    min-width: 5rem;
+}
+
+.hori-scroll {
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bars-con {
+    display: none;
+}
+
+@media screen and (max-width: 1035px) {
+    .bars-con {
+        display: block;
+    }
+    .right-nav {
+        display: none;
+    }
+}
+
