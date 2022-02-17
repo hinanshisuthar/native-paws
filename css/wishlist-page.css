@@ -37,3 +37,25 @@ hr {
     border: 1px solid var(--bg-grey);
 }
 
+@media screen and (max-width: 1075px) {
+    .wish-prods {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        display: block;
+    }
+    .wish-prods {
+        margin: 3rem;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .wish-prods {
+        margin: 1rem;
+    }
+}
+
