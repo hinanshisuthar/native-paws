@@ -25,8 +25,10 @@
 
 
 .card-badge {
-    width: 15rem;
-    height: max-content;
+    width: 17.5rem;
+    height: 30rem;
+    box-shadow: var(--box-shadow-2);
+    background-color: var(--light-grey);
 }
 
 .main {
@@ -65,8 +67,8 @@
     width: 80%;
 }
 
-.prod-img:hover {
-    transform: scale(1.1);
+.product-nm {
+    height: 2.5rem;
 }
 
 /* aside */
@@ -79,14 +81,19 @@ aside {
     height: 90vh;
     overflow-y: auto;
     overflow-x: hidden;
+    border-right: 2px solid var(--bg-grey);
+}
+
+.filter-content .sort-con form div {
+    place-items: start;
+    align-items: center;
 }
 
 @media screen and (max-width: 1075px) {
     aside {
         position: static;
         height: 4.5rem;
-        /* width: 14rem; */
-        /* width: max-content; */
+        border-right: 2px solid transparent;
     }
     
     .filter-content {
