@@ -2,7 +2,8 @@
 @import url(/css/navbar.css);
 
 .card-badge {
-    width: 15rem;
+    width: 17.5rem;
+    height: 26rem;
 }
 
 .wish-prods {
