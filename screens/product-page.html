@@ -21,7 +21,7 @@
     <header class="page-header">
         <div class="header-content flex-row-sb p-1">
             <a href="/index.html" class="logo">
-                <img src="/assets/logo.webp" alt="logo" class="img-responsive">
+                <img src="/assets/logo.webp" alt="logo" class="min-img img-responsive">
             </a>
             <div class="flex-row-sb right-nav px-sm">
                 <div class="search-con flex-row-sb">
@@ -55,116 +55,124 @@
                 </div>
                 <div class="account-con">
                     <div class="user">
-                        <a href="/screens/log-in.html"><i class="fa-regular fa-user"></i></a>
+                        <a href="/screens/log-in.html"><i class="fa-regular fa-user text-md"></i></a>
                     </div>
                 </div>
-                <div class="account-con">
+                <div class="wish-con">
                     <a href="/screens/wishlist-page.html">
-                        <span class="badge-icon badge-container"><i class="fas fa-heart badge-icon-base"></i>
+                        <span class="badge-icon badge-container"><i class="fas fa-heart badge-icon-base text-md"></i>
                             <span class="count-badge heart-badge-number">4</span>
                         </span>
                     </a>
                 </div>
                 <div class="cart-con">
                     <a href="/screens/cart-page.html">
-                        <span class="badge-icon badge-container"><i class="fa-solid fa-cart-shopping thin"></i>
+                        <span class="badge-icon badge-container"><i class="fa-solid fa-cart-shopping text-md"></i>
                             <span class="count-badge cart-badge-number">3</span>
                         </span>
                     </a>
                 </div>
             </div>
+            <div class="bars-con">
+                <div class="user">
+                    <a href="/screens/log-in.html"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="grid grid-25-75 main">
+    <main class="grid grid-25-75 grid-1-col main main-prods">
         <aside class="filters-sec p-2">
             <div class="filter-con flex-row-sb my-sm">
-                <h3>FILTERS</h3>
+                <button><h3>FILTERS</h3></button>
 
                 <a class="link" href="#">
                     <h5><button class="clear-all-btn">clear all</button></h5>
                 </a>
             </div>
             <hr>
-            <div class="sort-con my-sm">
-                <h5>SORT BY</h5>
-                <form action="#" class="m-0 py-1">
-                    <div class="grid grid-20-80">
-                        <input type="radio" name="sort" id="sort-asc" />
-                        <label for="sort-asc">price low to high</label>
-                    </div>
-
-                    <div class="grid grid-20-80">
-                        <input type="radio" name="sort" id="sort-des" />
-                        <label for="sort-des">price low to high</label>
-                    </div>
-
-                    <div class="grid grid-20-80">
-                        <input type="radio" name="sort" id="best-seller" />
-                        <label for="best-seller">best seller</label>
-                    </div>
-
-                    <div class="grid grid-20-80">
-                        <input type="radio" name="sort" id="new-arrivals" />
-
-                        <label for="new-arrivals">new arrivals</label>
-                    </div>
-
-
-                </form>
+            <div class="filter-content">
+                <div class="sort-con my-sm">
+                    <h5>SORT BY</h5>
+                    <form action="#" class="m-0 py-1">
+                        <div class="grid grid-20-80">
+                            <input type="radio" name="sort" id="sort-asc" />
+                            <label for="sort-asc">price low to high</label>
+                        </div>
+    
+                        <div class="grid grid-20-80">
+                            <input type="radio" name="sort" id="sort-des" />
+                            <label for="sort-des">price low to high</label>
+                        </div>
+    
+                        <div class="grid grid-20-80">
+                            <input type="radio" name="sort" id="best-seller" />
+                            <label for="best-seller">best seller</label>
+                        </div>
+    
+                        <div class="grid grid-20-80">
+                            <input type="radio" name="sort" id="new-arrivals" />
+    
+                            <label for="new-arrivals">new arrivals</label>
+                        </div>
+    
+    
+                    </form>
+                </div>
+    
+                <div class="price-range my-md">
+                    <h5>RATINGS</h5>
+                    <form name="price-field" oninput="range1value.value = range1.valueAsNumber" class="price-field">
+                        <input name="range1" type="range" step="1" min="1" max="5" value="1">
+                        <div><output name="range1value" for="range1">1</output><span>⭐ and above</span></div>
+                    </form>
+                </div>
+    
+                <div class="sort-con">
+                    <h5 class="py-sm">CATEGORIES</h5>
+                    <form name="categories" class="categories">
+                        <h6 class="center">Products</h6>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="toys" id="toys">
+                            <label for="small">Toys</label>
+                        </div>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="food" id="food">
+                            <label for="small">Food</label>
+                        </div>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="leash" id="leash">
+                            <label for="small">Leash</label>
+                        </div>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="cloth" id="cloth">
+                            <label for="small">Cloths</label>
+                        </div>
+                    </form>
+    
+                    <form name="categories" class="categories">
+                        <h6>Breed Size</h6>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="small" id="small">
+                            <label for="small">Small</label>
+                        </div>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="medium" id="medium">
+                            <label for="small">Medium</label>
+                        </div>
+                        <div class="grid grid-20-80">
+                            <input type="checkbox" name="large" id="large">
+                            <label for="small">Large</label>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-            <div class="price-range my-md">
-                <h5>RATINGS</h5>
-                <form name="price-field" oninput="range1value.value = range1.valueAsNumber" class="price-field">
-                    <input name="range1" type="range" step="1" min="1" max="5" value="1">
-                    <div><output name="range1value" for="range1">1</output><span>⭐ and above</span></div>
-                </form>
-            </div>
-
-            <div class="sort-con">
-                <h5 class="py-sm">CATEGORIES</h5>
-                <form name="categories" class="categories">
-                    <h6 class="center">Products</h6>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="toys" id="toys">
-                        <label for="small">Toys</label>
-                    </div>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="food" id="food">
-                        <label for="small">Food</label>
-                    </div>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="leash" id="leash">
-                        <label for="small">Leash</label>
-                    </div>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="cloth" id="cloth">
-                        <label for="small">Cloths</label>
-                    </div>
-                </form>
-
-                <form name="categories" class="categories">
-                    <h6>Breed Size</h6>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="small" id="small">
-                        <label for="small">Small</label>
-                    </div>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="medium" id="medium">
-                        <label for="small">Medium</label>
-                    </div>
-                    <div class="grid grid-20-80">
-                        <input type="checkbox" name="large" id="large">
-                        <label for="small">Large</label>
-                    </div>
-                </form>
-            </div>
+            
 
         </aside>
         <div class="all-prods pl-2">
             <h1 class="mb-2">All products</h1>
-            <div class="products grid grid-3-col pt-2">
+            <div class="products grid grid-3-col grid-3-col-auto pt-2">
                 <a href="#" id="card-links" class="card-badge">
                     <div>
                         <div class="product">
