@@ -33,7 +33,7 @@ body {
 /* banner */
 
 .banner-con img {
-    width: 85%;
+    width: 100%;
 }
 
 .go-left .btn, .go-right .btn {
@@ -98,5 +98,37 @@ body {
     height: 15rem;
     background-color: var(--accent-color);
     justify-content: space-between;
+}
+
+/* media - queries */
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+@media screen and (max-width: 630px) {
+    .pet-cards-btm {
+        grid-template-columns: 1fr;
+    }
+    .bb-img {
+        width: 5rem;
+    }
+    .pet-cards-btm .p-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
