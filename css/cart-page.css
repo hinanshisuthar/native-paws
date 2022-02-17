@@ -99,3 +99,27 @@
     color: var(--cta-color);
 }
 
+@media screen and (max-width: 495px) {
+    .card-horizontal {
+        flex-direction: column;
+        width: 18rem;
+    }
+    .cart-details {
+        width: 20rem;
+    }
+    .cart-cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1175px) {
+    .auto-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart-cards {
+        margin-left: 0;
+    }
+}
