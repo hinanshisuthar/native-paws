@@ -51,6 +51,41 @@ header {
     z-index: var(--z-1);
 }
 
+/* Account Options */
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    background-color: var(--light-grey);
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: var(--color-dark-blue);
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+    font-weight: 600;
+}
+
+.show {
+    display: block;
+}
+
 .min-img {
     min-width: 10rem;
 }
@@ -88,8 +123,8 @@ header {
         display: block;
         width: 100%;
     }
+
     .search-con {
         display: none;
     }
 }
-
