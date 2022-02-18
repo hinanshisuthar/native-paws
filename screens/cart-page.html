@@ -50,9 +50,10 @@
                         <i class="fa-solid fa-angle-down"></i>
                     </div>
                 </div>
-                <div class="account-con">
-                    <div class="user">
-                        <a href="/screens/log-in.html"><i class="fa-regular fa-user text-md"></i></a>
+                <div class="dropdown account-con">
+                    <i class="fa-regular fa-user text-md dropbtn"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="/screens/log-out.html" class="p-1">Log Out</a>
                     </div>
                 </div>
                 <div class="wish-con">
@@ -79,8 +80,7 @@
         </div>
         <div class="search-btm p-1">
             <form action="#" class="form-search flex-row-sb">
-                <input type="text" class="text-rg pl-1" id="search-field"
-                    placeholder="search the entire store...">
+                <input type="text" class="text-rg pl-1" id="search-field" placeholder="search the entire store...">
                 <button type="submit" class="btn-icon pr-sm"><i
                         class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
             </form>
@@ -248,6 +248,7 @@
 
     </div>
 </body>
+<script src="/navbar.js"></script>
 
 </html>
 
