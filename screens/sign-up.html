@@ -14,46 +14,125 @@
     <link rel="stylesheet" href="https://native-ui.netlify.app/native-ui.css">
 
     <!-- Native Paws Stylesheet -->
-    <link rel="stylesheet" href="/css/sign-up.css">
+    <link rel="stylesheet" href="/css/auth.css">
 
     <title>Sign Up</title>
 </head>
 
 <body>
-    <div class="wrapper-auth center">
+    <header class="page-header flex-col-sb">
+        <div class="header-content flex-row-sb p-1">
+            <a href="/index.html" class="logo">
+                <img src="/assets/logo.webp" alt="logo" class="min-img img-responsive">
+            </a>
+            <div class="search-con flex-row-sb img-responsive">
+                <form action="#" class="form-search flex-row-sb">
+                    <input type="text" class="text-rg pl-1" id="search-field"
+                        placeholder="search the entire store...">
+                    <button type="submit" class="btn-icon pr-sm"><i
+                            class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                </form>
+            </div>
+            <div class="flex-row-sb right-nav px-sm">
+                <div class="shop-con flex-row-sb">
+                    <a class="link" href="/screens/product-page.html">
+                        <h5>Shop</h5>
+                    </a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="experience-con flex-row-sb">
+                    <a class="link" href="#">
+                        <h5>experience</h5>
+                    </a>
+                </div>
+                <div class="location-con">
+                    <div class="location flex-row-sb">
+                        <a class="link" href="#">
+                            <h5>location</h5>
+                        </a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="account-con">
+                    <div class="user">
+                        <a href="/screens/log-in.html"><i class="fa-regular fa-user text-md"></i></a>
+                    </div>
+                </div>
+                <div class="wish-con">
+                    <a href="/screens/wishlist-page.html">
+                        <span class="badge-icon badge-container"><i
+                                class="fas fa-heart badge-icon-base text-md"></i>
+                            <span class="count-badge heart-badge-number">4</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="cart-con">
+                    <a href="/screens/cart-page.html">
+                        <span class="badge-icon badge-container"><i class="fa-solid fa-cart-shopping text-md"></i>
+                            <span class="count-badge cart-badge-number">3</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="bars-con">
+                <div class="user">
+                    <a href="/screens/log-in.html"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-btm p-1">
+            <form action="#" class="form-search flex-row-sb">
+                <input type="text" class="text-rg pl-1" id="search-field"
+                    placeholder="search the entire store...">
+                <button type="submit" class="btn-icon pr-sm"><i
+                        class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+            </form>
+        </div>
+    </header>
+    <div class="wrapper-auth center mt-1">
         <div class="signup-con flex-col-sb p-0 pb-sm">
             <div class="top flex-col-sb">
                 <h4>Hi-Ya Pet Parents!</h4>
                 <p class="text-sm">Let’s raise healthy and happy furs together.</p>
-                <div class="doodle"><img src="/auth-doodle.svg" alt="dog-doodle" class="img-responsive"></div>
+                <div class="doodle"><img src="/assets/auth-doodle.svg" alt="dog-doodle" class="img-responsive"></div>
             </div>
             <div class="bottom flex-col-sb">
-                <form action="#" class="select-form grid grid-50-50">
-                    <button type="submit" class="sign-up-btn btn btn-primary">
-                        sign up
-                    </button>
-                    <button type="submit" class="log-in-btn btn">log in</button>
-                </form>
-                <h4>Create an account for free</h4>
-                <div class="size-options m-0">
-                    <button><i class="fa fa-facebook"></i></button>
-                    <button><i class="fa fa-google"></i></button>
-                    <button><i class="fa fa-twitter"></i></button>
+                <div class="select-form flex-row-sb">
+                    <a href="/screens/sign-up.html" class="mx-sm"><button type="submit"
+                            class="sign-up-btn btn btn-primary">
+                            sign up
+                        </button></a>
+                    <a href="/screens/log-in.html" class="mx-sm"><button type="submit" class="log-in-btn btn">log
+                            in</button></a>
+                </div>
+                <div class="flex-row-sb">
+                    <h4 class="mr-sm">Continue with</h4>
+                    <div class="size-options m-0">
+                        <button><i class="fa fa-google"></i></button>
+                    </div>
                 </div>
                 <p>Or you can manually sign-up too</p>
                 <form action="#" class="sign-up-form">
-                    <input type="text" placeholder="Name*" />
+                    <input type="text" placeholder="First Name*" />
+                    <input type="text" placeholder="Last Name*" />
                     <input type="email" placeholder="Email*" />
-                    <input type="password" placeholder="Password*" />
+                    <div class="flex-row-sb pass-div">
+                        <input type="password" placeholder="Password*" class="pass-field"/>
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex-row-sb pass-div">
+                        <input type="password" placeholder="Confirm Password*" class="pass-field"/>
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
                     <div class="tnc grid grid-20-80">
                         <input type="checkbox" name="tnc" id="tnc"><label for="tnc"><small>By continuing, I agree to the
                                 Terms of Use and Privacy & Cookie Policy</small></label>
                     </div>
-                    <button class="sign-up-btn btn btn-primary">sign up</button>
+                    <a href="/screens/sign-up.html" id="su-submit"><button class="sign-up-btn btn btn-primary">sign up</button></a>
                 </form>
             </div>
         </div>
     </div>
 </body>
-</html>
 
+</html>

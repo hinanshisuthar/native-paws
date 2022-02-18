@@ -17,9 +17,78 @@
 </head>
 
 <body>
+    <header class="page-header flex-col-sb">
+        <div class="header-content flex-row-sb p-1">
+            <a href="/index.html" class="logo">
+                <img src="/assets/logo.webp" alt="logo" class="min-img img-responsive">
+            </a>
+            <div class="search-con flex-row-sb img-responsive">
+                <form action="#" class="form-search flex-row-sb">
+                    <input type="text" class="text-rg pl-1" id="search-field"
+                        placeholder="search the entire store...">
+                    <button type="submit" class="btn-icon pr-sm"><i
+                            class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                </form>
+            </div>
+            <div class="flex-row-sb right-nav px-sm">
+                <div class="shop-con flex-row-sb">
+                    <a class="link" href="/screens/product-page.html">
+                        <h5>Shop</h5>
+                    </a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="experience-con flex-row-sb">
+                    <a class="link" href="#">
+                        <h5>experience</h5>
+                    </a>
+                </div>
+                <div class="location-con">
+                    <div class="location flex-row-sb">
+                        <a class="link" href="#">
+                            <h5>location</h5>
+                        </a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="account-con">
+                    <div class="user">
+                        <a href="/screens/log-in.html"><i class="fa-regular fa-user text-md"></i></a>
+                    </div>
+                </div>
+                <div class="wish-con">
+                    <a href="/screens/wishlist-page.html">
+                        <span class="badge-icon badge-container"><i
+                                class="fas fa-heart badge-icon-base text-md"></i>
+                            <span class="count-badge heart-badge-number">4</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="cart-con">
+                    <a href="/screens/cart-page.html">
+                        <span class="badge-icon badge-container"><i class="fa-solid fa-cart-shopping text-md"></i>
+                            <span class="count-badge cart-badge-number">3</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="bars-con">
+                <div class="user">
+                    <a href="/screens/log-in.html"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-btm p-1">
+            <form action="#" class="form-search flex-row-sb">
+                <input type="text" class="text-rg pl-1" id="search-field"
+                    placeholder="search the entire store...">
+                <button type="submit" class="btn-icon pr-sm"><i
+                        class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+            </form>
+        </div>
+    </header>
     <div class="cart-wrapper mt-2">
         <h1 class="center m-md p-md">My Shopping Cart</h1>
-        <div class="cart-grid grid grid-60-40">
+        <div class="cart-grid grid grid-60-40 auto-flex">
             <div class="cart-cards flex-col-sb p-1">
                 <div class="card-horizontal">
                     <div class="product">

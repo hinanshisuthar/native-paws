@@ -1,6 +1,7 @@
 @import url(/css/helper.css);
+@import url(/css/navbar.css);
 
-body {
+.page-wrapper {
     color: var(--bg-color-2);
 }
 
@@ -8,56 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.logo {
-    flex-basis: 15%;
-    margin-right: 8rem;
-}
-
-.thin{
-    -webkit-text-stroke: 1px var(--background-color);
-}
-
-.user i{
-    -webkit-text-stroke: 0.5px var(--font-color-dark);
-}
-
-i{
-    cursor: pointer;
-}
-
-.right-nav {
-    flex-grow: 1;
-}
-
-form {
-    border: 2px solid var(--color-dark-blue);
-    border-radius: var(--size-12);
-    box-shadow: var(--box-shadow-2);
-}
-
-.search input {
-    border: transparent;
-    outline: transparent;
-}
-
-.text-rg {
-    margin: 0;
-}
-
-.search-icon {
-    color: var(--accent-color);
-}
-
-header {
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    box-shadow: var(--box-shadow);
-    background-color: var(--background-color);
-    z-index: var(--z-1);
 }
 
 /* main */
@@ -82,7 +33,7 @@ header {
 /* banner */
 
 .banner-con img {
-    width: 85%;
+    width: 100%;
 }
 
 .go-left .btn, .go-right .btn {
@@ -147,5 +98,35 @@ header {
     height: 15rem;
     background-color: var(--accent-color);
     justify-content: space-between;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* media queries */
+
+@media screen and (max-width: 630px) {
+    .pet-cards-btm {
+        grid-template-columns: 1fr;
+    }
+    .bb-img {
+        width: 5rem;
+    }
+    .pet-cards-btm .p-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 

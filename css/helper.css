@@ -19,3 +19,16 @@
     place-content: center;
 }
 
+.grid-70-30 {
+    grid-template-columns: 70% 1fr;
+    place-content: center;
+}
+
+@media screen and (max-width: 1075px) {
+    .grid-3-col-auto {
+        grid-template-columns: repeat(auto-fit, 17.5rem);
+        justify-content: center;
+    }
+}
+
+
