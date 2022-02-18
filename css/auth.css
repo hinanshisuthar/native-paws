@@ -47,9 +47,23 @@ form input {
     margin: var(--size-3) 0;
 }
 
-.sign-up-form input {
+.sign-up-form input, .sign-up-form .pass-div {
     border: 1px solid #808080;
     border-radius: 8px 8px;
+}
+
+.sign-up-form .pass-div input {
+    border:1px solid transparent;
+    font-size: 0.9rem;
+}
+
+.pass-field:focus-visible {
+    border: transparent;
+    outline: transparent;
+}
+
+.pass-div {
+    padding: 0 1rem;
 }
 
 .sign-up-form button {
