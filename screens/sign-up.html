@@ -113,9 +113,17 @@
                 </div>
                 <p>Or you can manually sign-up too</p>
                 <form action="#" class="sign-up-form">
-                    <input type="text" placeholder="Name*" />
+                    <input type="text" placeholder="First Name*" />
+                    <input type="text" placeholder="Last Name*" />
                     <input type="email" placeholder="Email*" />
-                    <input type="password" placeholder="Password*" />
+                    <div class="flex-row-sb pass-div">
+                        <input type="password" placeholder="Password*" class="pass-field"/>
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex-row-sb pass-div">
+                        <input type="password" placeholder="Confirm Password*" class="pass-field"/>
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                    </div>
                     <div class="tnc grid grid-20-80">
                         <input type="checkbox" name="tnc" id="tnc"><label for="tnc"><small>By continuing, I agree to the
                                 Terms of Use and Privacy & Cookie Policy</small></label>
