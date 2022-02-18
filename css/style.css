@@ -1,7 +1,7 @@
 @import url(/css/helper.css);
 @import url(/css/navbar.css);
 
-body {
+.page-wrapper {
     color: var(--bg-color-2);
 }
 
@@ -100,16 +100,12 @@ body {
     justify-content: space-between;
 }
 
-/* media - queries */
-
 /* scroll bar */
 
-/* width */
 ::-webkit-scrollbar {
     width: 0;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: transparent;
 }
@@ -117,6 +113,8 @@ body {
 ::-webkit-scrollbar-thumb {
     background: transparent;
 }
+
+/* media queries */
 
 @media screen and (max-width: 630px) {
     .pet-cards-btm {
