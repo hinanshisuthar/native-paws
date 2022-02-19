@@ -3,9 +3,6 @@
 
 .page-wrapper {
     color: var(--bg-color-2);
-}
-
-.page-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -85,7 +82,7 @@
 .pet-cards-btm .p-card {
     box-shadow: none;
     border-radius: 0;
-    gap: 1rem;
+    gap: 1.5rem;
     background-color: var(--light-grey);
 }
 
