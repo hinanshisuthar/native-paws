@@ -24,6 +24,23 @@
     place-content: center;
 }
 
+/* scroll bar */
+
+::-webkit-scrollbar{
+    height: 2px;
+    width: 4px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background: var(--dark-grey);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:vertical{
+    background: var(--dark-grey);
+    border-radius: 10px;
+}
+
+
 @media screen and (max-width: 1075px) {
     .grid-3-col-auto {
         grid-template-columns: repeat(auto-fit, 17.5rem);
