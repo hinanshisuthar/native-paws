@@ -23,6 +23,10 @@
     -webkit-text-stroke: 1px var(--background-color);
 }
 
+.all-prods.center {
+    flex-direction: column;
+    margin-top: 3rem;
+}
 
 .card-badge {
     width: 17.5rem;
@@ -36,13 +40,9 @@
     gap: 2em 0;
 }
 
-.all-prods {
-    margin-top: 3rem;
-}
-
 .products {
     height: 100%;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 /* filter section */
@@ -105,3 +105,16 @@ aside {
     }
 }
 
+@media screen and (max-width: 300px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .card-badge {
+        width: 15rem;
+    }
+    main {
+        width: 100%;
+    }
+}
