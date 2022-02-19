@@ -3,10 +3,6 @@
     margin-right: 5rem;
 }
 
-.thin {
-    -webkit-text-stroke: 1px var(--background-color);
-}
-
 .user i {
     -webkit-text-stroke: 1px var(--font-color-dark);
 }
