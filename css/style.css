@@ -36,7 +36,8 @@
     width: 100%;
 }
 
-.go-left .btn, .go-right .btn {
+.go-left .btn,
+.go-right .btn {
     background-color: var(--bg-grey);
     border-radius: 50%;
 }
@@ -63,7 +64,7 @@
     cursor: pointer;
 }
 
-.cat img:hover + .overlay-text{
+.cat img:hover+.overlay-text {
     display: block;
 }
 
@@ -74,7 +75,7 @@
 /* bottom banner */
 
 .bb-img {
-    width: 20%;
+    width: 25%;
 }
 
 .pet-cards-btm {
@@ -95,23 +96,18 @@
 /* footer */
 
 .footer {
-    height: 15rem;
+    height: max-content;
     background-color: var(--accent-color);
     justify-content: space-between;
+    flex-direction: row;
 }
 
-/* scroll bar */
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: transparent;
+.link-footer {
+    background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #eeebeb79, #eeebeb79, #eeebeb94);
+    background-size: 100% 0.15em, 0em 0.15em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms;
 }
 
 /* media queries */
@@ -120,13 +116,30 @@
     .pet-cards-btm {
         grid-template-columns: 1fr;
     }
+
     .bb-img {
-        width: 5rem;
+        width: 10%;
     }
+
     .pet-cards-btm .p-card {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer div {
         align-items: center;
     }
 }
 
+@media screen and (max-width: 435px) {
+    .bb-img {
+        width: 15%;
+    }
+}
