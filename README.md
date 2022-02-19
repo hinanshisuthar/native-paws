@@ -1,2 +1,2 @@
 # NATIVE PAWS
-Ecommerce Store for pet essentials
+Ecommerce Store for all your native furrs' essentials
