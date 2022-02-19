@@ -1,0 +1,14 @@
+#go-top {
+    position: fixed;
+    bottom:2rem;
+    right: 2rem;
+    border-radius: 50%;
+}
+#go-top:hover {
+    color: var(--cta-color);
+}
+
+.btn-float i {
+    color: var(--cta-color);
+}
+
