@@ -1,7 +1,7 @@
 #go-top {
     position: fixed;
-    bottom:2rem;
-    right: 2rem;
+    bottom:1rem;
+    right: 1rem;
     border-radius: 50%;
 }
 #go-top:hover {
