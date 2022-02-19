@@ -1,3 +1,5 @@
+@import url(/css/float-btn.css);
+
 :root {
     --color-dark-blue: #392758;
     --light-grey: #eeebeb;
@@ -23,6 +25,11 @@
     grid-template-columns: 70% 1fr;
     place-content: center;
 }
+
+.thin {
+    -webkit-text-stroke: 1px var(--background-color);
+}
+
 
 /* scroll bar */
 
