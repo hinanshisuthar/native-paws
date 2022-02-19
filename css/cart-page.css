@@ -110,6 +110,12 @@
     .cart-cards {
         width: 100%;
     }
+    .prod-content {
+        align-items: center;
+    }
+    .prod-quantity, .card-horizontal .prod-links .prod-content .prod-info {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1175px) {
