@@ -1,0 +1,83 @@
+@import url(/css/helper.css);
+@import url(/css/navbar.css);
+@import url(/css/cart-page.css);
+
+.profile {
+    width: 50rem;
+    height: 25rem;
+    background-color: var(--sand-bg);
+}
+
+.page-wrapper, .account-page-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-content {
+    width: 100%;
+}
+
+.profile-scroll {
+    height: 20rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-grow: 1;
+}
+
+.profile-content-nav {
+    border-right: 1px solid var(--font-color-dark);
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-self: flex-start;
+}
+
+.profile-content-page {
+    height: max-content;
+    width: 70%;
+    flex-grow: 1;
+}
+
+.profile-content-page-text {
+    border-bottom: 1px solid var(--font-color-dark);
+}
+
+.highlight-class {
+    color: var(--cta-color);
+}
+
+.card-address {
+    width: 20rem;
+}
+
+#orders, #address {
+    display: none;
+}
+
+.profile-nav-link {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile-nav-link:hover{
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 843px) {
+    .profile-content-nav {
+        display: none;
+    }
+    .profile {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .profile {
+        width: 70%;
+    }
+}
+
