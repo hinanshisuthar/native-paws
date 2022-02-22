@@ -6,10 +6,8 @@
   <br />
 </h1>
 
-<p align="center">
-  ![Forks](https://img.shields.io/github/forks/hinanshisuthar/native-paws)
+![Forks](https://img.shields.io/github/forks/hinanshisuthar/native-paws)
 ![Stars](https://img.shields.io/github/stars/hinanshisuthar/native-paws)
-</p>
 
 <br />
 
@@ -17,6 +15,7 @@
 
 <p align="center">
   <a href="https://native-paws.netlify.app/">Check Out the Website</a>
+  <br />
   <a href="https://github.com/hinanshisuthar/native-paws/issues">Report a Bug</a>
 </p>
 <hr />
@@ -41,7 +40,7 @@
 ## ** About**
 
 <p align="center">
-  <img width="100%" src="" alt="NATIVE PAWS WALKTHROUGH"/>
+  <img width="100%" src="/assets/walkthrough.gif" alt="NATIVE PAWS WALKTHROUGH"/>
 </p>
 
 <br />
@@ -79,6 +78,8 @@ Go to [Native Paws](https://native-paws.netlify.app/) and show some love to your
 
 DROP A ⭐ IF YOU LIKED IT.
 
-> GitHub [@hinanshisuthar](https://github.com/hinanshisuthar) &nbsp;&middot;&nbsp;
-> LinkedIn [@hinanshi-suthar](https://www.linkedin.com/in/hinanshi-suthar-7128201b0/) &nbsp;&middot;&nbsp;
-> Twitter [@hinanshi04](https://twitter.com/hinanshi04)
+### Connect With Me
+
+GitHub [@hinanshisuthar](https://github.com/hinanshisuthar) &nbsp;&middot;&nbsp;
+LinkedIn [@hinanshi-suthar](https://www.linkedin.com/in/hinanshi-suthar-7128201b0/) &nbsp;&middot;&nbsp;
+Twitter [@hinanshi04](https://twitter.com/hinanshi04)
