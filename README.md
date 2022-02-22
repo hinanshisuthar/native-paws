@@ -60,10 +60,15 @@ Go to [Native Paws](https://native-paws.netlify.app/) and show some love to your
 - Search for products without the need to go and find in the products.
 - Cart Management Page
 - Wishlist Management Page
-- Authentication pages
+- Authentication pages ( Click on the account-user icon on the navbar)
     - Log In
     - Sign Up
     - Log Out
+- Add Coupons
+- User Profile Page
+    - User Information
+- Saved Addresses
+- Order Summary
 
 <br />
 
