@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8fb4d48a29.js" crossorigin="anonymous"></script>
+
+    <!-- Component Library Stylesheet -->
+    <link rel="stylesheet" href="https://native-ui.netlify.app/native-ui.css">
+
+    <!-- Native Paws Stylesheet -->
+    <link rel="stylesheet" href="/css/user-profile.css">
+    <title>My Account</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="page-header flex-col-sb">
+            <div class="header-content flex-row-sb p-1">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/logo.webp" alt="logo" class="min-img img-responsive">
+                </a>
+                <div class="search-con flex-row-sb img-responsive">
+                    <form action="#" class="form-search flex-row-sb">
+                        <input type="text" class="text-rg pl-1" id="search-field"
+                            placeholder="Search the entire store...">
+                        <button type="submit" class="btn-icon pr-sm"><i
+                                class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                    </form>
+                </div>
+                <div class="flex-row-sb right-nav px-sm">
+                    <div class="shop-con flex-row-sb">
+                        <a class="link" href="/screens/product-page.html">
+                            <h5>Shop All Products</h5>
+                        </a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="experience-con flex-row-sb">
+                        <a class="link" href="#">
+                            <h5>Experience</h5>
+                        </a>
+                    </div>
+                    <div class="location-con">
+                        <div class="location flex-row-sb">
+                            <a class="link" href="#">
+                                <h5>Location</h5>
+                            </a>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="dropd">
+                        <i class="fa-regular fa-user text-md dropbtn"></i>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/screens/log-out.html" class="p-1">Log Out</a>
+                            <a href="/screens/user-profile.html" class="p-1">My Account</a>
+                        </div>
+                    </div>
+                    <div class="wish-con">
+                        <a href="/screens/wishlist-page.html">
+                            <span class="badge-icon badge-container"><i
+                                    class="fas fa-heart badge-icon-base text-md"></i>
+                                <span class="count-badge heart-badge-number">4</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="cart-con">
+                        <a href="/screens/cart-page.html">
+                            <span class="badge-icon badge-container"><i class="fa-solid fa-cart-shopping text-md"></i>
+                                <span class="count-badge cart-badge-number">3</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bars-con">
+                    <div class="user">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="search-btm p-1">
+                <form action="#" class="form-search flex-row-sb">
+                    <input type="text" class="text-rg pl-1" id="search-field" placeholder="search the entire store...">
+                    <button type="submit" class="btn-icon pr-sm"><i
+                            class="fa-solid fa-magnifying-glass search-icon thin"></i></button>
+                </form>
+            </div>
+            <div class="menu p-sm">
+                <h5><a href="/screens/product-page.html">Shop All Products</h5></a>
+                <h5><a href="/screens/wishlist-page.html">My Wishlist</h5></a>
+                <h5><a href="/screens/cart-page.html">My Shopping Cart</h5></a>
+                <h5><a href="">Location</h5></a>
+                <h5><a href="/screens/sign-up.html">Sign Up</h5></a>
+                <h5><a href="/screens/log-in.html">Log In</h5></a>
+            </div>
+        </header>
+
+        <div class="account-page-con">
+            <h1 class="text-center p-sm">My Account</h1>
+            <div class="profile p-1 flex-col-sb">
+                <div class="profile-content flex-row-sb p-1">
+                    <div class="profile-content-nav flex-col-sb-start p-1 px-2 mr-2">
+                        <div class="m-sm profile-nav-link" id="profile-btn">My Profile</div>
+                        <div class="m-sm profile-nav-link" id="orders-btn">Orders</div>
+                        <div class="m-sm profile-nav-link" id="addresses-btn">Addresses</div>
+                    </div>
+                    <div class="profile-scroll">
+                        <div class="profile-content-page" id="profile">
+                            <h4 class="p-sm text-center profile-content-page-text">Details</h4>
+                            <div class="details con">
+                                <div class="name flex-row-sb p-sm">
+                                    <p>Name</p>
+                                    <p>Rachel Green</p>
+                                </div>
+                                <div class="email flex-row-sb p-sm">
+                                    <p>Email</p>
+                                    <p>rachelgreen@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content-page" id="orders">
+                            <h4 class="p-sm text-center profile-content-page-text">My Orders</h4>
+                            <div class="details con">
+                                <div class="card-horizontal">
+                                    <div class="product">
+                                        <div class="prod-container">
+                                            <img src="/assets/saverpack.jpg" alt="product" class="hori-img">
+                                        </div>
+                                    </div>
+                                    <div class="prod-links p-1">
+                                        <div class="prod-content p-0">
+                                            ORDER CONFIRMED
+                                            <span>22-02-2022</span>
+                                            <h5 class="text-center">Dear pet Blooming Yellow Dog Harness</h5>
+                                            <div class="prod-info">
+                                                <span class="prod-price">Rs 299</span>
+                                            </div>
+                                            Order Id: #12098765432
+                                            <div class="size-options">
+                                                <button class="highlight-class">S</button>
+                                                <button>M</button>
+                                                <button>L</button>
+                                            </div>
+                                            Deliver to: Address 1 
+                                        </div>
+                                        <div class="prod-quantity flex-row-sb pl-sm">Quantity
+                                            <span class="p-sm">1</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-horizontal">
+                                    <div class="product">
+                                        <div class="prod-container">
+                                            <img src="/assets/saverpack.jpg" alt="product" class="hori-img">
+                                        </div>
+                                    </div>
+                                    <div class="prod-links p-1">
+                                        <div class="prod-content p-0">
+                                            ORDER CONFIRMED
+                                            <span>22-02-2022</span>
+                                            <h5 class="text-center">Dear pet Blooming Yellow Dog Harness</h5>
+                                            <div class="prod-info">
+                                                <span class="prod-price">Rs 299</span>
+                                            </div>
+                                            Order Id: #12098765432
+                                            <div class="size-options">
+                                                <button class="highlight-class">S</button>
+                                                <button>M</button>
+                                                <button>L</button>
+                                            </div>
+                                            Deliver to: Address 1 
+                                        </div>
+                                        <div class="prod-quantity flex-row-sb pl-sm">Quantity
+                                            <span class="p-sm">1</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content-page" id="address">
+                            <h4 class="p-sm text-center profile-content-page-text">My Addresses</h4>
+                            <div class ="details con">
+                                <div class="card-horizontal flex-col-sb card-address">
+                                    <div class="product">
+                                        <h4 class="p-sm">Rachel Green</h4>
+                                        <p class="p-sm">Q/10 Friends Appartment, Bangalore, Karnataka - 3939830</p>
+                                        <br>
+                                        <small class="p-sm">Phone Number: 8798675435</small>
+                                    </div>
+                                    <div class="prod-links p-1">
+                                        <button class="btn btn-primary">Edit</button>                                        
+                                        <button class="btn btn-secondary">Remove</button>                                        
+                                    </div>
+                                </div>
+                                <div class="card-horizontal flex-col-sb card-address">
+                                    <div class="product">
+                                        <h4 class="p-sm">Rachel Green</h4>
+                                        <p class="p-sm">Q/10 Friends Appartment, Bangalore, Karnataka - 3939830</p>
+                                        <br>
+                                        <small class="p-sm">Phone Number: 8798675435</small>
+                                    </div>
+                                    <div class="prod-links p-1">
+                                        <button class="btn btn-primary">Edit</button>                                        
+                                        <button class="btn btn-secondary">Remove</button>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/navbar.js"></script>
+<script src="/js/account.js"></script>
+</html>
